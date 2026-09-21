@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Care Hospital - Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="sign_in.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <h2>City Care Hospital</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header
+        style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+        <h1 style="margin:0; color:#ffffff; text-align:center;">Sign In</h1>
+        <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">Access your patient
+                account</small></p>
+    </header>
+
+
+    <div class="page-layout">
+        <main class="content">
+            <h2>Sign In</h2>
+
+            <div class="card-row">
+                <div class="info-box">
+                    <h3>Fast Login</h3>Access your records instantly
+                </div>
+                <div class="info-box">
+                    <h3>Secure Account</h3>Your data stays protected
+                </div>
+            </div>
+
+            <h3>Trusted by Our Patients</h3>
+            <img class="gallery-img" src="Images/Hospital.webp" alt="Hospital Building">
+            <img class="gallery-img" src="Images/Dr.Ninad.jfif" alt="Doctor">
+
+            <h3>Password Guidelines</h3>
+            <table>
+                <tr>
+                    <th>Rule</th>
+                    <th>Requirement</th>
+                </tr>
+                <tr>
+                    <td>Length</td>
+                    <td>Minimum 8 characters</td>
+                </tr>
+                <tr>
+                    <td>Characters</td>
+                    <td>At least 1 number</td>
+                </tr>
+            </table>
+
+            <form action="index.html" method="get">
+                <fieldset>
+                    <legend>Sign In Details</legend>
+                    <table cellpadding="10">
+                        <tr>
+                            <td><label for="username">Username</label></td>
+                            <td>
+                                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td>
+                                <input type="password" id="password" name="password" placeholder="Enter Password"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Sign In">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+            <p>
+                Don't have an account?
+                <a href="sign_up.html">Sign Up</a>
+            </p>
+
+            <div class="highlight-box">New here? Create a free account in under a minute!</div>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Copyright City Care Hospital 2026</small></p>
+    </footer>
+
+</body>
+
+</html>

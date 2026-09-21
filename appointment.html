@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>City Care Hospital - Book Appointment</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="appointment.css">
+</head>
+
+<body>
+  <nav>
+    <h2>City Care Hospital</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="appointment.html">Book Appointment</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="sign_in.html">Sign In</a></li>
+      <li><a href="sign_up.html">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <header
+    style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+    <h1 style="margin:0; color:#ffffff; text-align:center;">Book an Appointment</h1>
+    <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">Schedule your consultation with our
+        specialist doctors</small></p>
+  </header>
+
+
+  <div class="page-layout">
+    <main class="content">
+      <h2>Book an Appointment</h2>
+      <p>Fill in your details below to schedule an appointment with our specialist doctors.</p>
+
+      <div id="bookingMessage" class="booking-message" style="display:none;"></div>
+
+      <form id="appointmentForm">
+        <label for="patientName">Patient Name</label>
+        <input type="text" id="patientName" placeholder="Enter patient full name">
+        <span id="nameError" class="field-error"></span>
+
+        <label for="patientEmail">Email Address</label>
+        <input type="email" id="patientEmail" placeholder="Enter patient email">
+        <span id="emailError" class="field-error"></span>
+
+        <label for="doctorSelect">Doctor</label>
+        <select id="doctorSelect">
+          <option value="">Select Doctor</option>
+          <option value="Dr. Ninad Sharma (Urologist)">Dr. Ninad Sharma (Urologist)</option>
+          <option value="Dr. Radhika Mehta (Neurologist)">Dr. Radhika Mehta (Neurologist)</option>
+          <option value="Dr. Shyamal Patil (Orthopedic Surgeon)">Dr. Shyamal Patil (Orthopedic Surgeon)</option>
+          <option value="Dr. Kavita Rao (Pediatrician)">Dr. Kavita Rao (Pediatrician)</option>
+        </select>
+        <span id="doctorError" class="field-error"></span>
+
+        <label for="serviceSelect">Service / Department</label>
+        <select id="serviceSelect">
+          <option value="">Select Service</option>
+          <option value="General Consultation">General Consultation</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Orthopedics">Orthopedics</option>
+          <option value="Pediatrics">Pediatrics</option>
+          <option value="Diagnostic Services">Diagnostic Services</option>
+          <option value="Health Checkups">Health Checkups</option>
+        </select>
+        <span id="serviceError" class="field-error"></span>
+
+        <label for="appointmentDate">Appointment Date</label>
+        <input type="date" id="appointmentDate">
+        <span id="dateError" class="field-error"></span>
+
+        <label for="appointmentTime">Appointment Time</label>
+        <select id="appointmentTime">
+          <option value="">Select Time Slot</option>
+          <option value="09:00 AM">09:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="02:00 PM">02:00 PM</option>
+          <option value="03:00 PM">03:00 PM</option>
+          <option value="04:00 PM">04:00 PM</option>
+        </select>
+        <span id="timeError" class="field-error"></span>
+
+        <button type="submit" id="bookBtn">Book Appointment</button>
+      </form>
+
+      <div id="appointmentDetails" class="result-card">
+        <div class="approved-bar">Appointment Details</div>
+        <p id="noAppointmentMessage" class="empty-appointment">No appointment booked yet.</p>
+        <div id="appointmentInfo" style="display:none;">
+          <p><strong>Patient Name:</strong> <span id="displayPatientName"></span></p>
+          <p><strong>Doctor:</strong> <span id="displayDoctor"></span></p>
+          <p><strong>Service:</strong> <span id="displayService"></span></p>
+          <p><strong>Date:</strong> <span id="displayDate"></span></p>
+          <p><strong>Time:</strong> <span id="displayTime"></span></p>
+          <div class="action-buttons">
+            <button type="button" id="rescheduleBtn" class="btn-reschedule">Reschedule</button>
+            <button type="button" id="cancelAppointmentBtn" class="btn-cancel">Cancel Appointment</button>
+          </div>
+          <div id="rescheduleSection"
+            style="display:none; margin-top:15px; border-top:1px solid #cfd8dc; padding-top:12px;">
+            <label for="newDate">New Date</label>
+            <input type="date" id="newDate">
+            <span id="newDateError" class="field-error"></span>
+            <label for="newTime">New Time</label>
+            <select id="newTime">
+              <option value="">Select Time Slot</option>
+              <option value="09:00 AM">09:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="03:00 PM">03:00 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+            </select>
+            <span id="newTimeError" class="field-error"></span>
+            <div class="action-buttons">
+              <button type="button" id="saveRescheduleBtn" class="btn-save">Save Date &amp; Time</button>
+              <button type="button" id="closeRescheduleBtn" class="btn-cancel">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-box">Same-day appointments available for emergencies!</div>
+    </main>
+  </div>
+
+  <footer>
+    <p><small>Copyright City Care Hospital 2026</small></p>
+  </footer>
+
+  <script src="appointment.js"></script>
+</body>
+
+</html>

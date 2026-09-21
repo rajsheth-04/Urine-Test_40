@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Care Hospital - Doctors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="department.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <h2>City Care Hospital</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header
+        style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+        <h1 style="margin:0; color:#ffffff; text-align:center;">Doctors</h1>
+        <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">Meet our experienced medical
+                team</small></p>
+    </header>
+
+
+    <div class="page-layout">
+        <main class="content">
+            <h2>Our Doctors</h2>
+
+            <div class="card-row">
+                <div class="info-box">
+                    <img src="Images/Dr.Ninad.jfif" alt="Dr. Ninad Sharma"
+                        style="width:70px;height:70px;border-radius:50%;object-fit:cover;"><br>
+                    <strong>Dr. Ninad Sharma</strong><br>
+                    <small>Cardiologist</small>
+                </div>
+                <div class="info-box">
+                    <img src="Images/Dr.Radhika.jfif" alt="Dr. Radhika Mehta"
+                        style="width:70px;height:70px;border-radius:50%;object-fit:cover;"><br>
+                    <strong>Dr. Radhika Mehta</strong><br>
+                    <small>Neurologist</small>
+                </div>
+                <div class="info-box">
+                    <img src="Images/Dr. Shamal.jfif" alt="Dr. Shyamal Patil"
+                        style="width:70px;height:70px;border-radius:50%;object-fit:cover;"><br>
+                    <strong>Dr. Shyamal Patil</strong><br>
+                    <small>Orthopedic Surgeon</small>
+                </div>
+                <div class="info-box">
+                    <img src="Images/Dr. Kavita.jfif" alt="Dr. Kavita Rao"
+                        style="width:70px;height:70px;border-radius:50%;object-fit:cover;"><br>
+                    <strong>Dr. Kavita Rao</strong><br>
+                    <small>Pediatrician</small>
+                </div>
+            </div>
+
+            <h3>Doctor Schedule & Timings</h3>
+            <table>
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Specialization</th>
+                    <th>Qualification</th>
+                    <th>OPD Timings</th>
+                </tr>
+                <tr>
+                    <td>Dr. Ninad Sharma</td>
+                    <td>Cardiology</td>
+                    <td>MD, DM Cardiology</td>
+                    <td>9 AM - 1 PM</td>
+                </tr>
+                <tr>
+                    <td>Dr. Radhika Mehta</td>
+                    <td>Neurology</td>
+                    <td>MD, DM Neurology</td>
+                    <td>11 AM - 3 PM</td>
+                </tr>
+                <tr>
+                    <td>Dr. Shyamal Patil</td>
+                    <td>Orthopedics</td>
+                    <td>MS Orthopedics</td>
+                    <td>10 AM - 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Dr. Kavita Rao</td>
+                    <td>Pediatrics</td>
+                    <td>MD Pediatrics</td>
+                    <td>9 AM - 12 PM</td>
+                </tr>
+            </table>
+
+            <p><i>Note: Timings may vary on Sundays and public holidays.</i></p>
+
+            <form method="POST" action="#">
+                <fieldset>
+                    <legend>Book with a Doctor</legend>
+                    <label>Select Doctor:<br>
+                        <select name="doctor_choice">
+                            <option>Dr. Ninad Sharma</option>
+                            <option>Dr. Radhika Mehta</option>
+                            <option>Dr. Shyamal Patil</option>
+                            <option>Dr. Kavita Rao</option>
+                        </select></label><br>
+                    <label>Your Name:<br>
+                        <input type="text" name="patient_name"></label><br>
+                    <input type="submit" value="Request Slot">
+                </fieldset>
+            </form>
+
+            <div class="highlight-box">Book online and save your waiting time</div>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Copyright City Care Hospital 2026</small></p>
+    </footer>
+
+</body>
+
+</html>

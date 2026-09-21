@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Care Hospital - Facilities</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="facilities.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>City Care Hospital</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header
+        style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+        <h1 style="margin:0; color:#ffffff; text-align:center;">Facilities</h1>
+        <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">Modern equipment, trusted
+                care</small></p>
+    </header>
+
+
+    <div class="page-layout">
+        <main class="content">
+            <h2>Our Facilities</h2>
+
+            <video src="Videos/1.mp4" width="100%"
+                style="max-width:500px; display:block; margin:0 auto 15px auto; border-radius:6px;" controls autoplay
+                muted loop></video>
+
+            <div class="card-row">
+                <div class="info-box">
+                    <h3>24x7 ICU</h3>Fully equipped, always ready
+                </div>
+                <div class="info-box">
+                    <h3>Modern OT</h3>Advanced surgical equipment
+                </div>
+                <div class="info-box">
+                    <h3>Pharmacy</h3>Round the clock service
+                </div>
+            </div>
+
+            <h3>Facility Gallery</h3>
+            <img class="gallery-img" src="Images/ICU.jpg" alt="ICU">
+            <img class="gallery-img" src="Images/OP.jpg" alt="Operation Theatre">
+            <img class="gallery-img" src="Images/Ambulence.jpg" alt="Ambulance">
+            <img class="gallery-img" src="Images/pharmacy.avif" alt="Pharmacy">
+
+            <table>
+                <tr>
+                    <th>Facility</th>
+                    <th>Photo</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>ICU</td>
+                    <td><img class="gallery-img" src="Images/ICU.jpg" alt="ICU"></td>
+                    <td>24 bed fully equipped Intensive Care Unit</td>
+                </tr>
+                <tr>
+                    <td>Operation Theatre</td>
+                    <td><img class="gallery-img" src="Images/OP.jpg" alt="Operation Theatre"></td>
+                    <td>Modular OTs with advanced surgical equipment</td>
+                </tr>
+                <tr>
+                    <td>Ambulance</td>
+                    <td><img class="gallery-img" src="Images/Ambulence.jpg" alt="Ambulance"></td>
+                    <td>24x7 ambulance service with trained paramedics</td>
+                </tr>
+                <tr>
+                    <td>Pharmacy</td>
+                    <td><img class="gallery-img" src="Images/pharmacy.avif" alt="Pharmacy"></td>
+                    <td>In-house pharmacy open round the clock</td>
+                </tr>
+            </table>
+
+            <h3>Diagnostic Lab</h3>
+            <p>Our NABL accredited pathology lab provides accurate and quick results for
+                all routine and specialised tests.</p>
+
+            <form method="POST" action="#">
+                <fieldset>
+                    <legend>Request Facility Information</legend>
+                    <label>Your Name:<br>
+                        <input type="text" name="req_name"></label><br>
+                    <label>Facility of Interest:<br>
+                        <select name="facility_choice">
+                            <option>ICU</option>
+                            <option>Operation Theatre</option>
+                            <option>Pharmacy</option>
+                        </select></label><br>
+                    <input type="submit" value="Send Request">
+                </fieldset>
+            </form>
+
+            <h3>Patient Age Statistics</h3>
+            <p>Age data of 10 recently registered patients (sample data for analysis):</p>
+            <div
+                style="border:1px solid #cfd8dc; border-radius:6px; padding:15px; margin:15px 0; max-width:500px; background-color:#ffffff;">
+                <p><strong>All Patient Ages:</strong><br><span id="allAges"></span></p>
+                <p><strong>Minimum Age:</strong><br><span id="minAge"></span></p>
+                <p><strong>Maximum Age:</strong><br><span id="maxAge"></span></p>
+                <p><strong>Average Age:</strong><br><span id="avgAge"></span></p>
+                <p><strong>Senior Citizens (age &gt;= 60):</strong><br><span id="seniorCount"></span></p>
+                <p><strong>Patients Below 18:</strong><br><span id="below18Count"></span></p>
+                <p><strong>Patients Above 60:</strong><br><span id="above60List"></span></p>
+            </div>
+
+            <div class="highlight-box">24x7 Emergency &amp; Ambulance Facility Available - Call 102</div>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Copyright City Care Hospital 2026</small></p>
+    </footer>
+
+    <script src="facilities.js"></script>
+</body>
+
+</html>

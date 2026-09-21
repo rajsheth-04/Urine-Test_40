@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Care Hospital - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <h2>City Care Hospital</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header
+        style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+        <h1 style="margin:0; color:#ffffff; text-align:center;">Contact Us</h1>
+        <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">We are here to help, 24x7</small>
+        </p>
+    </header>
+
+
+    <div class="page-layout">
+        <main class="content">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 123 Health Street, Andheri East,<br>
+                Mumbai, Maharashtra - 400069</p>
+
+            <div class="card-row">
+                <div class="info-box">
+                    <h3>Call Us</h3><a href="tel:02212345678">022-12345678</a>
+                </div>
+                <div class="info-box">
+                    <h3>Email Us</h3><a href="mailto:info@citycare.example">info@citycare.example</a>
+                </div>
+                <div class="info-box">
+                    <h3>Ambulance</h3>102
+                </div>
+            </div>
+
+            <h3>Visit Us</h3>
+            <img class="gallery-img" src="Images/Hospital.webp" alt="Hospital Front View"
+                style="width:160px;height:120px;">
+            <img class="gallery-img" src="Images/Ambulence.jpg" alt="Ambulance Bay" style="width:160px;height:120px;">
+
+            <h3>Department Numbers</h3>
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>Reception</td>
+                    <td>022-12345678</td>
+                </tr>
+                <tr>
+                    <td>Emergency</td>
+                    <td>022-98765432</td>
+                </tr>
+                <tr>
+                    <td>Ambulance</td>
+                    <td>102</td>
+                </tr>
+            </table>
+
+            <h3>Find Us</h3>
+            <iframe src="https://maps.google.com/maps?q=Mumbai&output=embed" width="100%" height="300"
+                style="border:1px solid #cfd8dc; border-radius:6px;" title="City Care Hospital Location"></iframe>
+
+            <h3>Send us a Message</h3>
+            <div id="successMessage" class="success-message" style="display:none;"></div>
+            <form id="contactForm" method="POST" action="#">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="cname">Your Name:<br>
+                        <input type="text" id="cname" name="cname" required></label>
+                    <span id="nameError" class="error-message"></span><br>
+                    <label for="cemail">Your Email:<br>
+                        <input type="email" id="cemail" name="cemail" required></label>
+                    <span id="emailError" class="error-message"></span><br>
+                    <label for="message">Message:<br>
+                        <textarea rows="5" id="message" name="message" required></textarea></label>
+                    <span id="messageError" class="error-message"></span><br>
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear">
+                </fieldset>
+            </form>
+
+            <div class="highlight-box">24x7 Helpline: 022-98765432</div>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Copyright City Care Hospital 2026</small></p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

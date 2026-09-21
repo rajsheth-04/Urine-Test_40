@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Care Hospital - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="sign_up.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>City Care Hospital</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header
+        style="background-color:#1f4f66; color:#ffffff; padding:20px; text-align:center; border-bottom:3px solid #2f6f8f;">
+        <h1 style="margin:0; color:#ffffff; text-align:center;">Sign Up</h1>
+        <p style="text-align:center; margin:8px 0 0 0;"><small style="color:#cfe3ea;">Create your patient
+                account</small></p>
+    </header>
+
+
+    <div class="page-layout">
+        <main class="content">
+            <h2>Create Account</h2>
+
+            <div id="errorMessage"
+                style="display:none; background-color:#ffebee; color:#c62828; border:1px solid #ef9a9a; padding:10px; border-radius:4px; margin:10px 0; max-width:500px;">
+            </div>
+            <div id="successMessage"
+                style="display:none; background-color:#e8f5e9; color:#2e7d32; border:1px solid #a5d6a7; padding:10px; border-radius:4px; margin:10px 0; max-width:500px;">
+            </div>
+
+            <form id="signupForm" action="index.html" method="get">
+                <fieldset>
+                    <legend>Create Account</legend>
+                    <table cellpadding="10">
+                        <tr>
+                            <td><label for="fullname">Full Name</label></td>
+                            <td><input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="patientId">Patient ID</label></td>
+                            <td><input type="text" id="patientId" name="patientId" placeholder="e.g. PAT-1234"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Enter Email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile">Mobile Number</label></td>
+                            <td><input type="text" id="mobile" name="mobile" placeholder="10 digit number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Age</label></td>
+                            <td><input type="number" id="age" name="age" min="0" placeholder="Enter Age"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Gender</label></td>
+                            <td><select id="gender" name="gender">
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bloodGroup">Blood Group</label></td>
+                            <td><select id="bloodGroup" name="bloodGroup">
+                                    <option value="">Select</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="department">Department</label></td>
+                            <td><select id="department" name="department">
+                                    <option value="">Select</option>
+                                    <option value="Urology">Urology</option>
+                                    <option value="Nephrology">Nephrology</option>
+                                    <option value="General Medicine">General Medicine</option>
+                                    <option value="Pediatrics">Pediatrics</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="appointmentType">Appointment Type</label></td>
+                            <td><select id="appointmentType" name="appointmentType">
+                                    <option value="">Select</option>
+                                    <option value="New Patient">New Patient</option>
+                                    <option value="Follow-up">Follow-up</option>
+                                    <option value="Emergency">Emergency</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="username">Username</label></td>
+                            <td><input type="text" id="username" name="username" placeholder="Enter Username"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" id="password" name="password" placeholder="Enter Password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm_password">Confirm Password</label></td>
+                            <td><input type="password" id="confirm_password" name="confirm_password"
+                                    placeholder="Confirm Password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Sign Up">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <div id="patientInfoCard"
+                style="display:none; border:1px solid #cfd8dc; border-radius:6px; padding:15px; margin:15px 0; max-width:500px; background-color:#ffffff;">
+                <div
+                    style="background-color:#2e7d32; color:#ffffff; padding:8px 12px; border-radius:4px; font-weight:bold; text-align:center; margin-bottom:12px;">
+                    Registration Successful</div>
+                <h3 style="color:#1f4f66; margin-top:0;">Patient Information</h3>
+                <p id="infoDisplay"></p>
+                <h3 style="color:#1f4f66;">Appointment Information</h3>
+                <p id="appointmentDisplay"></p>
+                <h3 style="color:#1f4f66;">Patient Category</h3>
+                <p id="categoryDisplay"></p>
+            </div>
+
+            <p>
+                Already have an account?
+                <a href="sign_in.html">Sign In</a>
+            </p>
+
+            <div class="highlight-box">New members get a free first checkup!</div>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Copyright City Care Hospital 2026</small></p>
+    </footer>
+
+    <script src="sign_up.js"></script>
+</body>
+
+</html>
